@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
 import './index.css';
+//New Version components
+
+
+//legacy components
 import './Components/legacy/TodoBoard';
 import TodoBoard from './Components/legacy/TodoBoard';
 import './Components/legacy/TodoItem';
@@ -21,6 +25,7 @@ import TodoItem from './Components/legacy/TodoItem';
 // export default App;
 
 //--------------------------------------------------------------Legacy-------------------------------------------------
+// 코알누 유튜브 참고
 function App(props) {
 
   const [inputValue,setInputValue] = useState('');
@@ -29,6 +34,9 @@ function App(props) {
       console.log("입력한 값 :", inputValue);
       setTodoList([...todoList,inputValue])
     }
+  const remvItem = () => {
+
+  }
 
     return (
     <div className="App">

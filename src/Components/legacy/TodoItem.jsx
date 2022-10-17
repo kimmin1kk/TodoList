@@ -14,10 +14,17 @@
 //--------------------Legacy------------------------------
 import React from 'react';
 function TodoItem(props) {
+    function remvItem () {
+        console.log("여기 맞음");
+    }
     return(
         <div className="todo-item">
-            {/* {props.item} */}
+            {props.item}
+            <p className="remv-item">
+            <button onClick={remvItem}>삭제</button>
+            </p>
         </div>
+
     )
 }
 

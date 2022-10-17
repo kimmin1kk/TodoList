@@ -6,10 +6,10 @@
 */
 import React from 'react';
 
-function TodoItem() {
+function TodoItem(props) {
     return(
         <div>
-
+            
         </div>
     )
 }
